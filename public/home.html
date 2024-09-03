@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="../images/photo_2024-07-27_18-52-20.jpg">
+    <title>Easy Grammar</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand&family=Raleway&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="./script.js" defer type="module"></script>
+
+</head>
+<style>
+    main h2 {
+        -webkit-text-stroke: 1px black;
+        color: rgb(12, 188, 231);
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <h2>Easy Grammar</h2>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="../lessons/lessons.html">Lessons</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="../assessments/assessment.html">Assessments</a></li>
+            </ul>
+            <div class="pro">
+                <a href="./profile.html">
+                    <button style="height: 35px; width: 35px;border-radius: 100%;"><i class="fas fa-user"></i></button>
+                </a>
+                <span id="username" style="font-family:'Fredoka One', cursive;font-weight: lighter;"></span>
+            </div>
+            <div class="toggle" onclick="showNavbar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-nav-links">
+            <p class="side-nav-link"><a href="#">Home</a></p>
+            <p class="side-nav-link"><a href="../lessons/lessons.html">Lessons</a></p>
+            <p class="side-nav-link"><a href="./videos.html">Videos</a></p>
+            <p class="side-nav-link"><a href="../assessments/assessment.html">Assessments</a></p>
+            <div>
+                <a href="./profile.html">
+                    <button style="height: 35px; width: 35px;border-radius: 100%;"><i class="fas fa-user"></i></button>
+                </a>
+                <span id="username" style="font-family:'Fredoka One', cursive;font-weight: lighter;"></span>
+            </div>
+        </div>
+    </div>
+    <main style="text-align: center;">
+        <h1>Welcome To Easy Grammar!</h1>
+        <h2>For an interactive and accessible Grammar Learning</h2>
+    </main>
+    <script type="module" src="./profile.js"></script>
+    <script src="./media.js" defer type="module"></script>
+</body>
+
+</html>
